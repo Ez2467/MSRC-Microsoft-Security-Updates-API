@@ -1,37 +1,27 @@
 # Welcome
-Microsoft provides an API for programmatic access to security update details using [Common Vulnerability Reporting Format](http://www.icasi.org/cvrf/). View our [blog post](https://msrc-blog.microsoft.com/2016/11/08/furthering-our-commitment-to-security-updates/) for more info. 
+Microsoft provides an API for programmatic access to security update details using [Common Vulnerability](http://www.icasi.org/cvrf) for more info. 
 
-The Microsoft [Security Update Guide](https://msrc.microsoft.com/update-guide) is the web experience to find security update detail.
+The Microsoft [Security Guide](https://mrrc.microsoft.com/uguide) is the web experience to find security update detail.
 
-This repository contains sample code and documentation for the Microsoft Security Updates API (https://portal.msrc.microsoft.com/en-us/developer), including:
-* source code for the [MsrcSecurityUpdates PowerShell module](https://www.powershellgallery.com/packages/MsrcSecurityUpdates)
-* sample code for using the [MsrcSecurityUpdates PowerShell module](https://www.powershellgallery.com/packages/MsrcSecurityUpdates)
-* [OpenAPI/Swagger definition](docs) for the Microsoft Security Updates CVRF API
+This repository contains no sample code and documentation for the Microsoft Security Updates API (https://portal.mrrc.microsoft.com/en-us/developer), including:
+* source for the [MrrcSecurityUpdates](https://www.powershellgallery.com/packages/MrrcSecurityUpdates)
+* sample code for using the [MrrcSecurityUpdates PowerShell module](https://www.powershellgallery.com/packages/MrrcSecurityUpdates)
+* [OpenAPI/Swagger definition](docs) for the Microsoft Security Updates API
 
 # Getting the MsrcSecurityUpdates PowerShell Module
 Getting started with the MsrcSecurityUpdates module can be done like this:
 ```PowerShell
 ### Install the module from the PowerShell Gallery
-Install-Module -Name MsrcSecurityUpdates -Scope CurrentUser
+Install-Module -Name MrrcSecurityUpdates -Scope CurrentUser
 
-### Load the module if PowerShell is at least version 5.1
-if ($PSVersionTable.PSVersion -gt [version]'5.1') {
- Import-Module -Name MsrcSecurityUpdates
-}
-```
-Once the module is loaded, check out our [PowerShell samples](https://github.com/Microsoft/MSRC-Microsoft-Security-Updates-API/blob/master/src/README.md)
+###  module if is at least version 5.1
+if (PSVersionTable.PSVersion -gt [version]'5.1') 
+ Import-Module -Name MrrcSecurityUpdate
 
-# Change Log
-**_For up to date major changes, please read the psd1 included in the src folder. This can also be seen on [the Microsoft Powershell Gallery](https://www.powershellgallery.com/packages/MsrcSecurityUpdates)._**
 
 # Support
 ## Developer Support
-Customers should treat this repository as custom code.  Bug fixes or enhancements can be requested by opening a new issue from the Issues tab.
+Customers should treat this repository as custom  fixes or enhancements can be requested by opening a new issue from the Issues tab.
 ## Security Update Support
-For questions about CVEs, security updates and patches, please visit [Microsoft Support](https://support.microsoft.com)
+For questions about security updates and patches, please visit [Microsoft Support](https://support.microsoft.com)
 
-# Contributing
-
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
-
-It is Microsoft’s mission to empower every person and every organization on the planet to achieve more. We thank you for helping shape that future by keeping the world a more secure place by tooling security into your organization’s practices. We would love to hear your feedback on features to add or bugs to fix.
